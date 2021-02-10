@@ -33,7 +33,7 @@ The File Transfer Protocol (FTP) is a standard network protocol used for the tra
 
 ![4](https://user-images.githubusercontent.com/58820314/107451158-62da6380-6b4f-11eb-83a1-641787528b49.png)
 
-Here we found vulnerabilities but we will use a specific one to gain access:  **vsftpd 2.3.4 - Backdoor Command Execution (Metasploit)|unix/remote/17491.rb**
+Here we found multiple vulnerabilities but we will use a specific one in order to gain access:  **vsftpd 2.3.4 - Backdoor Command Execution (Metasploit)|unix/remote/17491.rb**
 
 •	Now we need to open the **Metasploit framework** to use this vulnerability but we should start the database using these commands
 
