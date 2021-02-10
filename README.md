@@ -1,15 +1,14 @@
  ## Metasploitable Writeup ##
 
  
- **Metasploitable** is virtual machine is an intentionally vulnerable version of Ubuntu Linux designed for testing security tools and demonstrating common vulnerabilities.
-
+ **Metasploitable**   is a virtual machine is an intentionally vulnerable version of Ubuntu Linux designed for testing security tools and demonstrating common vulnerabilities.
 ###  Gain root access on this machine:  ###
 
-•	Login to your kali or any other Linux distribution, in my case I using kali Linux 
+Login to your kali or any other Linux distribution, in my case I use Kali Linux 
 
-•	Login to the metasploitable machine 
+•	Login to the Metasploitable machine 
 
-• Login username and password in this case is: ***msfadmin***
+• Login username and password, in this case, is: ***msfadmin***
 
   ![2](https://user-images.githubusercontent.com/58820314/107451148-60780980-6b4f-11eb-8a33-ce0c5302154b.png)
 
@@ -17,7 +16,7 @@
 
 ![1](https://user-images.githubusercontent.com/58820314/107451122-52c28400-6b4f-11eb-9a93-48b02d9ffd6b.png)
 
-•	Now we need to make sure that we can ping on the machine by using this command **ping 192.168.3.130** where the ip of the machine is **192.168.3.130** and here no packet loss which mean connection is successful. 
+•	Now we need to make sure that we can ping on the machine by using this command **ping 192.168.3.130** where the IP of the machine is **192.168.3.130** and here no packet loss which means the connection is successful. 
 
 ![3](https://user-images.githubusercontent.com/58820314/107451152-6110a000-6b4f-11eb-942f-2e2e8cfd6c75.png)
 
@@ -26,7 +25,7 @@
 
 ![6 ](https://user-images.githubusercontent.com/58820314/107451162-64a42700-6b4f-11eb-8ff9-8352b3068cee.png)
 
-You can test any service here and for me I used **(vsftpd 2.3.4)**
+You can test any service here and for me, I used **(vsftpd 2.3.4)**
 
 The File Transfer Protocol (FTP) is a standard network protocol used for the transfer of computer files between a client and server on a computer network, vsftpd, which stands for "Very Secure FTP Daemon”, is an FTP server for Unix-like systems, including Linux.
 
@@ -34,9 +33,9 @@ The File Transfer Protocol (FTP) is a standard network protocol used for the tra
 
 ![4](https://user-images.githubusercontent.com/58820314/107451158-62da6380-6b4f-11eb-83a1-641787528b49.png)
 
-Here we found a vulnerabilities but we will use specific one in order to gain access :  **vsftpd 2.3.4 - Backdoor Command Execution (Metasploit)|unix/remote/17491.rb**
+Here we found vulnerabilities but we will use a specific one to gain access:  **vsftpd 2.3.4 - Backdoor Command Execution (Metasploit)|unix/remote/17491.rb**
 
-•	Now we need to open the **Metasploit framework** in order to use this vulnerability but we should start the database using these commands 
+•	Now we need to open the **Metasploit framework** to use this vulnerability but we should start the database using these commands
 
 1.	**sudo msfdb start**
 
@@ -60,5 +59,4 @@ Here we found a vulnerabilities but we will use specific one in order to gain ac
 
 **run**  
 
- 
 
